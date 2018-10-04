@@ -18,7 +18,5 @@ public class Student extends Person{
     public String toString(){
         return this.getFamilyName() + ", " + this.getFirstName();
     }
-
-
-
+    
 }
