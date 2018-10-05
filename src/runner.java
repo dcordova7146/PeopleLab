@@ -1,3 +1,4 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import sun.applet.Main;
 
 public class runner
@@ -7,20 +8,21 @@ public class runner
 
     public static  void main(String[] args)
     {
-        Person Teacher = new Teacher();
-        Person Student = new Student();
-        Person Classroom = new Classroom();
 
-        int forLength = 0;
-        for(forLength = 0; forLength <= firstName.length; forLength++)
+        Teacher teacher = new Teacher("Math", "Mr", "John", "Tse");
+        Student[] students = new Student[5];
+        /*
+        for(int i = 0; i < students.length; i++)
         {
-            System.out.println();
-        }
-        for(forLength = 0; forLength <= lastName.length; forLength++)
-        {
-            System.out.println();
-        }
+            students[i] = new Student(firstName[i], lastName[i], Math.random()*4,true,true);
+            System.out.println(students[i]);
 
+        }
+        Classroom classroom = new Classroom(students,teacher);
+        classroom.printClass();
+        */
+        students[0] = new Student(firstName[0], lastName[0],Math.random()*4,true,true);
+        System.out.println(students[0]);
     }
 
 }

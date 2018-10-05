@@ -30,5 +30,6 @@ public class Classroom
         {
             System.out.println(this.students[i].getFirstName() + " " + this.students[i].getFamilyName());
         }
+        System.out.println(classAverage());
     }
 }
