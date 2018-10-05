@@ -10,8 +10,28 @@ public class Student extends Person{
         this.sports = sports;
     }
 
-    public double getGPA(){
+    public double getGPA() {
         return GPA;
+    }
+
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+
+    public boolean isMale() {
+        return male;
+    }
+
+    public void setMale(boolean male) {
+        this.male = male;
+    }
+
+    public boolean isSports() {
+        return sports;
+    }
+
+    public void setSports(boolean sports) {
+        this.sports = sports;
     }
 
     @Override
