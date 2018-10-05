@@ -1,20 +1,16 @@
 public class Classroom
 {
-    private Person[] students;
-    private  Person teacher;
-    private String Subject;
-    private double[] GPAs;
-    public Classroom( Person[] students, Person teacher, String Subject, double[] GPAs )
+    private Student[] students;
+    private Teacher teacher;
+    public Classroom( Student[] students, Teacher teacher)
     {
         this.students = students;
         this.teacher = teacher;
-        this.Subject = Subject;
-        this.GPAs = GPAs;
     }
 
     public String getSubject()
     {
-        return Subject;
+        return this.teacher.getSubject();
     }
 
     public double classAverage()
@@ -22,13 +18,17 @@ public class Classroom
         double avg = 0;
         for (int i = 0;i < (students.length - 1); i++)
         {
-            avg += GPAs[i];
+            avg += students[i].getGPA();
         }
         return (avg / (students.length - 1));
     }
 
-    public String printClass()
+    public void printClass()
     {
-        return (teacher + ", " + Subject + ", " + students);
+        System.out.println("Teacher: " + this.teacher + this.teacher.getSubject());
+        for (int i = 0;i < students.length;i++)
+        {
+            System.out.println(this.students[i].getFirstName() + " " + this.students[i].getFamilyName());
+        }
     }
 }
