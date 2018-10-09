@@ -28,7 +28,7 @@ public class Classroom
         System.out.println("Teacher: " + this.teacher + " " + this.teacher.getSubject());
         for (int i = 0;i < students.length;i++)
         {
-            System.out.println(this.students[i].getFirstName() + " " + this.students[i].getFamilyName());
+            System.out.println(this.students[i].getFirstName() + " " + this.students[i].getFamilyName() + " " + this.students[i].getGPA());
         }
         System.out.println("Class Average: " + classAverage());
     }
