@@ -34,7 +34,6 @@ public class Student extends Person{
         this.sports = sports;
     }
 
-    @Override
     public String toString(){
         return this.getFamilyName() + ", " + this.getFirstName();
     }

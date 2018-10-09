@@ -25,11 +25,11 @@ public class Classroom
 
     public void printClass()
     {
-        System.out.println("Teacher: " + this.teacher + this.teacher.getSubject());
+        System.out.println("Teacher: " + this.teacher + " " + this.teacher.getSubject());
         for (int i = 0;i < students.length;i++)
         {
             System.out.println(this.students[i].getFirstName() + " " + this.students[i].getFamilyName());
         }
-        System.out.println(classAverage());
+        System.out.println("Class Average: " + classAverage());
     }
 }
